@@ -1,6 +1,4 @@
 import os
-
-import about
 import display
 import download
 import forms
