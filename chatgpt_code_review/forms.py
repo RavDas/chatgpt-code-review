@@ -23,7 +23,7 @@ class RepoForm:
     def display_form(self):
         """Displays the repository form and its elements."""
         self.repo_url = st.text_input(
-            "GitHub Repository URL:", self.default_repo_url
+            "Repository URL:", self.default_repo_url
         )
 
         env_api_key = os.getenv("OPENAI_API_KEY", "")
