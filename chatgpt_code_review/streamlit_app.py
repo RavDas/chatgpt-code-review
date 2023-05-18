@@ -25,10 +25,6 @@ with utils.TempDirContext(temp_dir):
 
     st.title("ChatGPT Code Review")
 
-    with st.expander("About ChatGPT Code Review"):
-        st.markdown(about.about_section, unsafe_allow_html=True)
-        st.write("")
-
     default_repo_url = "https://github.com/domvwt/chatgpt-code-review"
     repo_form = forms.RepoForm(default_repo_url)
     with st.form("repo_url_form"):
